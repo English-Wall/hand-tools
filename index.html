@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vocabulary Example</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'PT Sans', sans-serif;
+    }
+  
+    .vocab-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     gap: 20px 10px; 
+     padding: 20px;
+     max-width: 960px; 
+     margin: 0 auto; 
+    }
+  
+    .vocab-item {
+      text-align: center;
+      width: calc(25% - 20px);
+      width: 130px;
+    }
+  
+    .vocab-item img {
+      width: 100%;
+      width: 130px;
+      height: 130px;
+      object-fit: contain; 
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: white;
+    }
+  
+    .vocab-item span {
+      font-weight: bold;
+      font-size: 18px;
+      display: block;
+      margin-top: 10px;
+    }
+    
+  //* 1. 平板電腦
+    @media (max-width: 768px) {
+       .vocab-item {
+           width: calc(33.33% - 20px);
+       }
+    }
+
+    //* 2. 手機 (Mobile)
+    @media (max-width: 480px) {
+       .vocab-container {
+           gap: 15px 5px;
+           padding: 10px;
+       }
+       .vocab-item {
+           width: calc(50% - 15px);
+           min-width: 100px;
+       }
+       .vocab-item img {
+           height: 100px; 
+       }
+       .vocab-item span {
+           font-size: 16px; 
+       }
+    }
+    
+    //* 3. 超小手機
+    @media (max-width: 320px) {
+       .vocab-item {
+           width: 90%;
+       }
+       .vocab-container {
+           justify-content: center; 
+       }
+    }
+ 
+  </style>
+
+</head>
+<body>
+
+ <h1 style="text-align: center; font-size: 20px; font-weight: bold; margin-top: 16px;">
+    打開聲音，聽聽這些工具的英文怎麼說！
+</h1>
+
+  <div class="vocab-container">
+
+   <div class="vocab-item">
+      <img src="combination_wrench_combination_spanner.png" alt="Combination Wrench (Combination Spanner)"
+           onclick="document.getElementById('combination_wrench_combination_spannerSound').play()">
+      <span>Combination Wrench (Combination Spanner)</span>
+      <audio id="combination_wrench_combination_spannerSound" src="combination_wrench_combination_spanner.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="open_end_wrench_open_jaw_spanner.png" alt="Open End Wrench (Open Jaw Spanner)"
+           onclick="document.getElementById('open_end_wrench_open_jaw_spannerSound').play()">
+      <span>Open End Wrench (Open Jaw Spanner)</span>
+      <audio id="open_end_wrench_open_jaw_spannerSound" src="open_end_wrench_open_jaw_spanner.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="box_end_wrench_ring_spanner.png" alt="Box-End Wrench (Ring Spanner)"
+           onclick="document.getElementById('box_end_wrench_ring_spannerSound').play()">
+      <span>Box-End Wrench (Ring Spanner)</span>
+      <audio id="box_end_wrench_ring_spannerSound" src="box_end_wrench_ring_spanner.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="open_end_crowfoot_wrench.png" alt="Open End Crowfoot Wrench"
+           onclick="document.getElementById('open_end_crowfoot_wrenchSound').play()">
+      <span>Open End Crowfoot Wrench</span>
+      <audio id="open_end_crowfoot_wrenchSound" src="open_end_crowfoot_wrench.mp3"></audio>
+    </div>
+ 
+    <div class="vocab-item">
+      <img src="hex_key_allen_wrench.png" alt="Hex Key (Allen Wrench)"
+           onclick="document.getElementById('hex_key_allen_wrenchSound').play()">
+      <span>Hex Key (Allen Wrench)</span>
+      <audio id="hex_key_allen_wrenchSound" src="hex_key_allen_wrench.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="torque_wrench.png" alt="Torque Wrench"
+           onclick="document.getElementById('torque_wrenchSound').play()">
+      <span>Torque Wrench</span>
+      <audio id="torque_wrenchSound" src="torque_wrench.mp3"></audio>
+    </div>
+    
+    <div class="vocab-item">
+      <img src="flat_nose_pliers.png" alt="Flat-Nose Pliers"
+           onclick="document.getElementById('flat_nose_pliersSound').play()">
+      <span>Flat-Nose Pliers</span>
+      <audio id="flat_nose_pliersSound" src="flat_nose_pliers.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="diagonal_cutting_pliers_diagonal_cutters.png" alt="Diagonal Cutting Pliers (Diagonal cutters)"
+           onclick="document.getElementById('diagonal_cutting_pliers_diagonal_cuttersSound').play()">
+      <span>Diagonal Cutting Pliers (Diagonal cutters)</span>
+      <audio id="diagonal_cutting_pliers_diagonal_cuttersSound" src="diagonal_cutting_pliers_diagonal_cutters.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="needle_nose_pliers.png" alt="Needle Nose Pliers"
+           onclick="document.getElementById('needle_nose_pliersSound').play()">
+      <span>Needle Nose Pliers</span>
+      <audio id="needle_nose_pliersSound" src="needle_nose_pliers.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="safety_wire_twister.png" alt="Safety Wire Twister"
+           onclick="document.getElementById('safety_wire_twisterSound').play()">
+      <span>Safety Wire Twister</span>
+      <audio id="safety_wire_twisterSound" src="safety_wire_twister.mp3"></audio>
+    </div>
+    
+    <div class="vocab-item">
+      <img src="groove_joint_pliers_adjustable_pliers.png" alt=" Groove Joint Pliers (Adjustable Pliers)"
+           onclick="document.getElementById('groove_joint_pliers_adjustable_pliersSound').play()">
+      <span> Groove Joint Pliers (Adjustable Pliers)</span>
+      <audio id="groove_joint_pliers_adjustable_pliersSound" src="groove_joint_pliers_adjustable_pliers.mp3"></audio>
+    </div>
+    
+    <div class="vocab-item">
+      <img src="slip_joint_pliers.png" alt="Slip Joint Pliers"
+           onclick="document.getElementById('slip_joint_pliersSound').play()">
+      <span>Slip Joint Pliers</span>
+      <audio id="slip_joint_pliersSound" src="slip_joint_pliers.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="locking_pliers_vise_grip.png" alt="Locking Pliers (Vise Grip)"
+           onclick="document.getElementById('locking_pliers_vise_gripSound').play()">
+      <span>Locking Pliers (Vise Grip)</span>
+      <audio id="locking_pliers_vise_gripSound" src="locking_pliers_vise_grip.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="speeder.png" alt="Speeder"
+           onclick="document.getElementById('speederSound').play()">
+      <span>Speeder</span>
+      <audio id="speederSound" src="speeder.mp3"></audio>
+    </div>
+    
+    <div class="vocab-item">
+      <img src="socket.png" alt="Socket"
+           onclick="document.getElementById('socketSound').play()">
+      <span>Socket</span>
+      <audio id="socketSound" src="socket.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="adapter.png" alt="Adapter"
+           onclick="document.getElementById('adapterSound').play()">
+      <span>Adapter</span>
+      <audio id="adapterSound" src="adapter.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="universal_joint.png" alt="Universal Joint"
+           onclick="document.getElementById('universal_jointSound').play()">
+      <span>Universal Joint</span>
+      <audio id="universal_jointSound" src="universal_joint.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="breaker_bar.png" alt="Breaker Bar"
+           onclick="document.getElementById('breaker_barSound').play()">
+      <span>Breaker Bar</span>
+      <audio id="breaker_barSound" src="breaker_bar.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="extension_bar.png" alt="Extension Bar"
+           onclick="document.getElementById('extension_barSound').play()">
+      <span>Extension Bar</span>
+      <audio id="extension_barSound" src="extension_bar.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="ratchet_handle_ratchet_wrench.png" alt="Ratchet Handle (Ratchet Wrench)"
+           onclick="document.getElementById('ratchet_handle_ratchet_wrenchSound').play()">
+      <span>Ratchet Handle (Ratchet Wrench)</span>
+      <audio id="ratchet_handle_ratchet_wrenchSound" src="ratchet_handle_ratchet_wrench.mp3"></audio>
+    </div>   
+
+    <div class="vocab-item">
+      <img src="ratcheting_box_wrench.png" alt="Ratcheting Box Wrench"
+           onclick="document.getElementById('ratcheting_box_wrenchSound').play()">
+      <span>Ratcheting Box Wrench</span>
+      <audio id="ratcheting_box_wrenchSound" src="ratcheting_box_wrench.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="slotted_screwdriver_flat_blade_screwdriver.png" alt="Slotted Screwdriver (Flat-Blade Screwdriver)"
+           onclick="document.getElementById('slotted_screwdriver_flat_blade_screwdriverSound').play()">
+      <span>Slotted Screwdriver (Flat-Blade Screwdriver)</span>
+      <audio id="slotted_screwdriver_flat_blade_screwdriverSound" src="slotted_screwdriver_flat_blade_screwdriver.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="phillips_screwdriver.png" alt="Phillips Screwdriver"
+           onclick="document.getElementById('phillips_screwdriverSound').play()">
+      <span>Phillips Screwdriver</span>
+      <audio id="phillips_screwdriverSound" src="phillips_screwdriver.mp3"></audio>
+    </div>    
+    
+    <div class="vocab-item">
+      <img src="ball_peen_hammer.png" alt="Ball Peen Hammer"
+           onclick="document.getElementById('ball_peen_hammerSound').play()">
+      <span>Ball Peen Hammer</span>
+      <audio id="ball_peen_hammerSound" src="ball_peen_hammer.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="rubber_mallet.png" alt="Rubber Mallet"
+           onclick="document.getElementById('rubber_malletSound').play()">
+      <span>Rubber Mallet</span>
+      <audio id="rubber_malletSound" src="rubber_mallet.mp3"></audio>
+    </div> 
+    
+  </div>
+
+</body>
+</html>
